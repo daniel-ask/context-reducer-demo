@@ -1,9 +1,12 @@
 import "../stylesheets/App.scss";
-import React, { useState } from "react";
+import React from "react";
 import Nav from "./Nav";
 import Home from "./Home";
 import NameForm from "./NameForm";
+import ChangeBackground from "./ChangeBackground";
+import Students from './Students';
 import NameThemeProvider from "../context/NameThemeProvider";
+
 
 function App() {
   return (
@@ -12,6 +15,8 @@ function App() {
         <Nav />
         <Home />
         <NameForm />
+        <ChangeBackground />
+        <Students/>
       </div>
     </NameThemeProvider>
   );
